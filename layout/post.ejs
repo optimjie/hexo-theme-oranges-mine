@@ -99,6 +99,13 @@
           }
         } %>
       </div>
+      <div class="post-views">
+        <% for(let item of theme.footer.views.item) {
+          if (item.enable && item.id === 'busuanzi_value_page_pv') { %>
+            <%- item.name %><span id="<%- item.id %>"></span><%- item.unit %>
+          <% } %>
+        <% } %>
+      </div>
       <div class="markdown-body">
         <%- page.content %>
       </div>

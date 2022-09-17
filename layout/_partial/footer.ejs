@@ -40,7 +40,7 @@
   <% if (theme.footer.views && theme.footer.views.enable) { %>
     <div class="footer-views">
       <% for(let item of theme.footer.views.item) {
-        if (item.enable) { %>
+        if (item.enable && item.id !== 'busuanzi_value_page_pv') { %>
           <%- item.name %><span id="<%- item.id %>"></span><%- item.unit %>
         <% } %>
       <% } %>

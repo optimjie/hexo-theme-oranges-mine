@@ -21,13 +21,13 @@
 # 网站图标
 favicon:
   enable: true
-  icon: /images/favicon.png
-  touch_icon: /images/favicon.png
+  icon: /images/image.png
+  touch_icon: /images/image.png
 
 # 用户头像与昵称
 avatar:
-  author_photo: /images/avatar.png
-  author_nickname: Oranges
+  author_photo: /images/image.png
+  author_nickname: optimjie
   path: /
 
 # Google 分析
@@ -45,7 +45,7 @@ comments:
 
   gitalk:
     # https://github.com/gitalk/gitalk#usage查看官方教程
-    enable: false
+    enable: true
     clientID:
     clientSecret:
     repo:
@@ -145,11 +145,11 @@ footer:
     -
       name: github
       icon: github
-      path: https://github.com/zchengsite/hexo-theme-oranges
-    # -
-    #   name: email
-    #   icon: envelope
-    #   path: 
+      path: https://github.com/optimjie
+    -
+      name: email
+      icon: envelope
+      path: mailto:optimjie@outlook.com
     # -
     #   name: facebook
     #   icon: facebooksquare
@@ -187,7 +187,7 @@ footer:
   # 浏览量统计
   # http://busuanzi.ibruce.info/
   views:
-    enable: false
+    enable: true
     provider: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
     item:
       -
@@ -237,7 +237,7 @@ codeBlock:
 # MathJax Support
 # 数学公式支持
 mathjax:
-  enable: true
+  enable: false
 
 # cdn配置，默认关闭，如需启动，先确保对应插件版本cdn资源可用后再开启
 # 如资源加载失败，可替换cdn提供商或设置enable:false默认走本地资源
@@ -265,8 +265,14 @@ cdns:
 
   # 评论系统
   comments:
+    enable: true
     gitalk:
       enable: false
+      clientID: 1a62a79bc50f70d6aaee
+      clientSecret: 88a1bac23858dd15dafc41237ac4cc3c1c1ccb31
+      repo: optimjie.github.io
+      owner: optimjie
+      admin: optimjie
       url:
         css: https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
         js: https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
